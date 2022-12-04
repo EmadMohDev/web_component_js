@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web component</title>
+<script src="./app.js"></script>
+
+</head>
+<body>
+
+
+  <!-- <template id="my-template">
+  
+    <style>
+      .card {
+        background: #CCC ;
+        width: 300px ;
+        height: 200px;
+        padding: 10px;
+        margin: 20px;
+      }
+    </style>
+  
+    <div class="card">
+      <slot name="heading" class="heading"></slot>
+      <slot name="content"></slot>
+      <button>Read More</button>
+    </div>
+  
+  </template> -->
+
+
+  <my-component heading-color="#f00"   bg-color="AntiqueWhite">
+    <h1 slot="heading"  >this is header 1</h1>
+    <p slot="content">this is description1</p>
+  </my-component>
+
+
+    <my-component heading-color="#00f"  bg-color="DarkMagenta">
+    <h1 slot="heading"  >this is header 2</h1>
+    <p slot="content">this is description2</p>
+  </my-component>
+
+
+
+
+  <my-component heading-color="#f00"  bg-color="gray">
+    <h3 slot="heading"> this is header3</h3>
+    <article slot="content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat! Aut commodi saepe velit accusamus omnis eius natus, temporibus ex animi iure consequuntur esse sequi, quia pariatur voluptates quis magnam.</article>
+  </my-component>
+
+
+
+
+</body>
+</html>
+
